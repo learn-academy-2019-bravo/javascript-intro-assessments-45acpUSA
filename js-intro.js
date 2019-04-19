@@ -71,7 +71,19 @@ const noVowels = str => {
   return arr.join("")
 }
 // Stretch: Update your function to throw an exception if the argument is not a string.
-
+const noVowels = str => {
+  if (typeof str === "string"){
+    let arr = []
+    str.split("").forEach(deVowel = letter => {
+      if (!/[aeiou]/i.test(letter)) {
+        arr.push(letter)
+      }
+    })
+    return arr.join("")
+  } else {
+    return `Please input a string.`
+  }
+}
 // Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
 
 // Consider the following variable:
