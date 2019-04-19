@@ -31,17 +31,17 @@ if ((codingIsEasy && imBored) === "no") {
 //Answer above
 // Consider the following statement:
 
-var imLost
-var imFrustrated
+var imLost = "no"
+var imFrustrated = "not currently"
 
-if (imLost || imFrustrated) {
+if (imLost === "yes" || imFrustrated === "yes") {
     console.log('Break time!')
 } else {
     console.log('Keep coding!')
 }
 
 // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
-
+//Answer above
 // 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
 
 // Stretch: Using a while loop.
