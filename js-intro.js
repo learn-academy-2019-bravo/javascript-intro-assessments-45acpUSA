@@ -53,7 +53,9 @@ while (i<mantra.length){
   i++
 }
 // Super Stretch: Using forEach().
-
+mantra.split("").forEach(func = letter => {
+  console.log(letter)
+})
 // Consider the following variable:
 
 var message = "thisisateststring"
