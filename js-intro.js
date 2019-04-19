@@ -13,7 +13,7 @@ mantra.includes("x")
 mantra.includes("v")
 //Returns boolean true - "Be the dev" does include "v"
 // Stretch: Write the code that returns the position of 'v' in mantra.
-
+mantra.indexOf("v")
 
 // Consider the following statement:
 
