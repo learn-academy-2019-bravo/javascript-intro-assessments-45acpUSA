@@ -43,7 +43,9 @@ if (imLost === "yes" || imFrustrated === "yes") {
 // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
 //Answer above
 // 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
-
+for (i=0; i<mantra.length; i++){
+  console.log(mantra[i])
+}
 // Stretch: Using a while loop.
 
 // Super Stretch: Using forEach().
