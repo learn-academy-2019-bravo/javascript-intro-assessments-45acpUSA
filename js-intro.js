@@ -10,7 +10,8 @@ mantra[0]
 mantra.includes("x")
 //Returns boolean false - "Be the dev" does not include "x"
 // 3. Write the code that determines if there is a 'v' in mantra.
-
+mantra.includes("v")
+//Returns boolean true - "Be the dev" does include "v"
 // Stretch: Write the code that returns the position of 'v' in mantra.
 
 
