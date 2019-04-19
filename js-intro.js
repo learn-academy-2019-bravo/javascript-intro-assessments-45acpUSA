@@ -17,17 +17,18 @@ mantra.indexOf("v")
 
 // Consider the following statement:
 
-var codingIsEasy
-var imBored
+var codingIsEasy = "no"
+var imBored = "no"
 
-if (codingIsEasy && imBored) {
+
+if ((codingIsEasy && imBored) === "no") {
     console.log("I need more!")
 } else {
     console.log("Steady as she goes")
 }
 
 // 4. Update the codingIsEasy and imBored variables above the statement to the values required to log "I need more!"
-
+//Answer above
 // Consider the following statement:
 
 var imLost
