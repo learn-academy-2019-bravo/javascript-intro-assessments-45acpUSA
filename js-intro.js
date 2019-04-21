@@ -71,23 +71,45 @@ const noVowels = str => {
   return arr.join("")
 }
 // Stretch: Update your function to throw an exception if the argument is not a string.
-const noVowels = str => {
-  if (typeof str === "string"){
-    let arr = []
-    str.split("").forEach(deVowel = letter => {
-      if (!/[aeiou]/i.test(letter)) {
-        arr.push(letter)
-      }
-    })
-    return arr.join("")
-  } else {
-    return `Please input a string.`
-  }
-}
+// const noVowels = str => {
+//   if (typeof str === "string"){
+//     let arr = []
+//     str.split("").forEach(deVowel = letter => {
+//       if (!/[aeiou]/i.test(letter)) {
+//         arr.push(letter)
+//       }
+//     })
+//     return arr.join("")
+//   } else {
+//     return `Please input a string.`
+//   }
+// }
 // Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
-
+// const noVowels = str => {
+//   if (typeof str !== "string"){
+//     throw "TypeError"
+//   } else {
+//     let arr = []
+//     str.split("").forEach(deVowel = letter => {
+//       if (!/[aeiou]/i.test(letter)) {
+//         arr.push(letter)
+//       }
+//     })
+//     return arr.join("")
+//   }
+// }
+// catch(e){
+//   console.log(e)
+// }
 // Consider the following variable:
 
 var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
 
 // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
+const toonCats = arr => {
+  return arr.filter(cat => {
+    if (cat.animal === 'cat') {
+      return cat.name
+    }
+  })
+}
