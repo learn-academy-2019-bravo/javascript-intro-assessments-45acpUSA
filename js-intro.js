@@ -71,26 +71,8 @@ var message = "thisisateststring"
 //   return arr.join("")
 // }
 // Stretch: Update your function to throw an exception if the argument is not a string.
-const noVowels = str => {
-  if (typeof str === "string"){
-    let arr = []
-    str.split("").forEach(deVowel = letter => {
-      if (!/[aeiou]/i.test(letter)) {
-        arr.push(letter)
-      }
-    })
-    return arr.join("")
-  } else {
-    throw "Error: Please Enter a String"
-  }
-}
-
-console.log(noVowels(123))
-// Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
 // const noVowels = str => {
-//   if (typeof str !== "string"){
-//     throw "TypeError"
-//   } else {
+//   if (typeof str === "string"){
 //     let arr = []
 //     str.split("").forEach(deVowel = letter => {
 //       if (!/[aeiou]/i.test(letter)) {
@@ -98,11 +80,25 @@ console.log(noVowels(123))
 //       }
 //     })
 //     return arr.join("")
+//   } else {
+//     throw "Error: Please Enter a String"
 //   }
 // }
-// catch(e){
-//   console.log(e)
-// }
+// Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
+const noVowels = str => {
+  if (typeof str !== "string"){
+    throw "TypeError"
+  } else {
+    let arr = []
+    str.split("").forEach(deVowel = letter => {
+      if (!/[aeiou]/i.test(letter)) {
+        arr.push(letter)
+      }
+    })
+    return arr.join("")
+  }
+}
+console.log(noVowels(123))
 // Consider the following variable:
 
 var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
