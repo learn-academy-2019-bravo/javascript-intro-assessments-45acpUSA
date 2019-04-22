@@ -3,6 +3,7 @@
 Answer these questions, then follow the instructions to submit your first assessment!
 
 #### 1. What is a function? Why would you use one?
+A function is a reuseable piece of code that allows you to perform an action, or set of actions, as many times as you'd like. You activate, or use, a function by calling upon it. This can occur in various ways such as, but not limited to, logging the function to the console, passing the function into another function as an argument, or calling upon the function within another function.
 
 #### 2. What is a method?
 
